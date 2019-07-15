@@ -6,6 +6,4 @@
 - C++
 - Data-Structure
 - Machine-Learning
-- Machine-Learning
-- Tips
-
+- OpenCV
