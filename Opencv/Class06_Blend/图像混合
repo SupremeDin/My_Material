@@ -1,0 +1,12 @@
+class 5：图像混合Blend （把两幅图片混合一副图片中）
+	1. ROI：  Region Of Interest 感兴趣区域！常用两个函数cv:Rect cv::Range来确定ROI  （具体使用时 自行查阅！）
+		具体操作为：	Mat imageROI = image(Rect(150, 150, 40, 50));
+		Mat imageROI = image(Range(150, 150+50), Range(150, 150+40));
+        2. 图像深度.depth() :指存储每个像素所用的位数(bits) 如一副 灰度图每个像素有8位bits（图像深度为8位），其最大灰度级数0-255 即意味着256种颜色可能  
+	3. addWeighted （译为：带有权重的把两幅图叠加！！！）那几个系数是什么意思？？
+	4. 变量的命名规则要求用“匈牙利法则”。即开头字母用变量的类型，其余部分用变量的英文意思或其英文意思的缩写,尽量避免用中文的拼音,要求单词的第一个字母应大写 即：变量名=变量类型+变量的英文意思（或缩写）
+           eg：用0结尾的字符串   用sz开头   szFileName   （sz means：String end with Zero！！！）
+               指针              用p开头    pDevGpio
+               布尔              用b开头    bFlag
+                ...........(注意大小写，英文缩写时第一个字母大写！)
+ 	5. actually，本节是要讲图像混合blending：其实不光有addWeighted(),还有add(),multiply().....即图像的加减乘除都要有！！！

@@ -1,0 +1,10 @@
+class 4：图像操作
+        //return 0：一般用在主函数结束时，按照程序开发的一般惯例，表示成功完成本函数。
+	//return -1：:表示返回一个代数值，一般用在子函数结尾。按照程序开发的一般惯例，表示该函数失败；(常识～！！！)
+	1.用.creat()来创建Mat对象！  
+		Mat dst；
+                dst.create(src.size(),src.type());  //使得dst的size、type跟src一致！
+		//dst = Scalar(_,_,_)     //每个pixel初始化相同的值
+	2.Vec3b---表示每一个Vec3b对象中,可以存储3个char(字符型)数据,比如可以用这样的对象,去存储RGB图像中的一个像素点typedef Vec<uchar, 3> Vec3b;
+	  Vec4b---表示每一个Vec4b对象中,可以存储4个字符型数据,可以用这样的类对象去存储4通道RGB+Alpha的图像中的像素点typedef Vec<uchar, 4> Vec4b;
+          Vec3b类型对应的三通道的顺序是BGR

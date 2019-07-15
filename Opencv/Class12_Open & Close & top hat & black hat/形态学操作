@@ -1,0 +1,17 @@
+class 12 形态学操作  （morphology operation）
+	1.上节课--形态学的最常见的两个操作 膨胀、腐蚀
+	2.API：
+	      morphologyEx(src,dst,CV_MOP_OPEN,kernel);
+	      //第3个参数可选为 open、close、gradinet、top hat、black hat
+		开操作- open   open() = dilate(erode())     先腐蚀后膨胀，可以去掉小的对象，假设对象是前景色，背景是黑色
+                闭操作- close  close() = erode(dilate())    先膨胀后腐蚀（bin2），可以填充前景上小的洞（fill hole），假设对象是前景色，背景是黑色
+		形态学梯度- Morphological Gradient   dst = dilate() - erode()    
+							    可以让像素间的像素值形成梯度 	膨胀减去腐蚀，又称为基本梯度(其它还包括-内部梯度(腐蚀减原图还是原图减腐蚀?)、方向梯度(在xy方向进行计算得出的结果))			
+                顶帽 – top hat                              顶帽 是原图像与开操作之间的差值图像，结果类似于 !开操作 的图像结果 
+                黑帽 – black hat                            黑帽是闭操作图像与源图像的差值图像，可以检测出原图前景色中的黑点 
+	3.上列的操作基本都是基于膨胀与腐蚀操作的，这些操作在二值图像(位图)、灰度图像中用的特别多，在彩色图像上效果不是很明显，可以将彩色图像转成二值图像
+
+    
+
+    
+

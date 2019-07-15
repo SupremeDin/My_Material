@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1563107550 source:/home/din/Study/C++/c++project/study163_course/src/TicketMachine.cpp
+	"TicketMachine.h"
+	<iostream>
+
+1563099783 /home/din/Study/C++/c++project/study163_course/include/TicketMachine.h
+
+1563107911 source:/home/din/Study/C++/c++project/study163_course/src/main.cpp
+	"TicketMachine.cpp"
+
+1563107550 /home/din/Study/C++/c++project/study163_course/src/TicketMachine.cpp
+	"TicketMachine.h"
+	<iostream>
+

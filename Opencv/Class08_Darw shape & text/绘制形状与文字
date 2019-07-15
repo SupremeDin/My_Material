@@ -1,0 +1,8 @@
+Class08：绘制形状与文字
+//心得：根据IDE的提示，基本可以你弄个清楚各个API的各项参数！！！easy
+         本class涉及到的opencv API有：
+		cv::line();        //画直线
+		cv::circle();      //画圆
+		cv::ellipse();     //画椭圆
+		cv::rectangle();   // 画矩形
+		cv::putText();     //加文字
